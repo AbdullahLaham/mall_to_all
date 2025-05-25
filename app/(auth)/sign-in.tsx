@@ -99,7 +99,7 @@ const SignIn = () => {
           </Text> */}
         {isError && <Text className="mx-5 text-red-500 font-JakartaBold text-md bg-gray-100 rounded-lg p-2">{error}</Text>}
 
-        <View className="p-5 bg-[#202124] h-[33rem]">
+        <View className="p-5 bg-blue-50 h-[33rem]">
           <InputField
             label="الايميل"
             placeholder="Enter email"
@@ -152,7 +152,7 @@ const SignIn = () => {
             // href="/sign-up"
             className="text-lg text-center text-general-200 mt-10 flex flex-row items-center gap-2 "
           >
-            <Text className="font-semibold text-white">هل أنت زبون جديد?</Text>
+            <Text className="font-semibold ">هل أنت زبون جديد?</Text>
             <Text className="text-primary-500 font-JakartaExtraBold">أنشىء حسابا</Text>
           </TouchableOpacity>
           
@@ -165,3 +165,5 @@ const SignIn = () => {
 };
 
 export default SignIn;
+
+/**i needs you to help me to fetch the data in my expo app they are three apis the first returns the categories https://coffee.mahmoudalbatran.com/api/category with a list of the products categories with data format like this {"status":true,"message":"هذا الركويست لعرض التصنيفات بشكل سكرول افقي","categories":[{"id":1,"name":"مطاعم","slug":"mtaaam","description":"مطاعم وجبات جاهزة, شاورما , كباب ...","image":"image/1747736476-cZMcesYvSt-jpg","created_at":"2025-05-20T10:21:16.000000Z","updated_at":"2025-05-20T10:21:16.000000Z","products_count":6},{"id":2,"name":"مخابز و حلويات","slug":"mkhabz-o-hloyat","description":"مخابز و حلويات","image":"image/1747736647-rYjF9Kl8sF-jpg","created_at":"2025-05-20T10:24:07.000000Z","updated_at":"2025-05-20T10:24:07.000000Z","products_count":3},{"id":3,"name":"صيدليات","slug":"sydlyat","description":"صيدليات","image":"image/1747736755-iKBd9RYfih-jpg","created_at":"2025-05-20T10:25:55.000000Z","updated_at":"2025-05-20T10:25:55.000000Z","products_count":2},{"id":4,"name":"الأسر المنتجة","slug":"alasr-almntg","description":"الأسر المنتجة","image":"image/1747736852-ZmqdpVkBbP-jpg","created_at":"2025-05-20T10:27:32.000000Z","updated_at":"2025-05-20T10:27:32.000000Z","products_count":0}]} and the second one is https://coffee.mahmoudalbatran.com/api/sub-category/1 for the sub categories of the categories  */

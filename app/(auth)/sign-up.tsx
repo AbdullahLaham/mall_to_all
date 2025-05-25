@@ -113,7 +113,7 @@ const SignUp = () => {
         </Text> */}
 
         {isError && <Text className="mx-5 text-red-500 font-JakartaBold text-md bg-gray-100 rounded-lg p-2">{error}</Text>}
-        <View className="p-5  bg-[#202124]">
+        <View className="p-5  bg-blue-50 ">
           <InputField
             label="الاسم"
             placeholder="Enter name"
@@ -174,7 +174,7 @@ const SignUp = () => {
           <TouchableOpacity onPress={() => router.replace("/(auth)/sign-in")}
             className="text-lg text-center text-general-200 mt-10 flex flex-row items-center gap-2"
           >
-            <Text className="font-semibold text-white">هل أنت زبون عند أجوان ?</Text>
+            <Text className="font-semibold ">هل أنت زبون عند أجوان ?</Text>
             <Text className="text-primary-500 font-JakartaExtraBold">سجل الدخول</Text>
           </TouchableOpacity>
         </View>

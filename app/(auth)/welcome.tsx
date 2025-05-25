@@ -31,7 +31,7 @@ const Welcome = () => {
 //   }, []);
  
   return (
-    <SafeAreaView className="flex h-full items-center justify-between bg-black z-[100] absolute top-0 left-0 right-0 bottom-0 ">
+    <SafeAreaView className="flex h-full items-center justify-between bg-white z-[100] absolute top-0 left-0 right-0 bottom-0 ">
 
       <TouchableOpacity
         onPress={() => {
@@ -57,7 +57,7 @@ const Welcome = () => {
           <View key={item.id} className="flex items-center justify-center p-5">
             <Image
               source={item.image}
-              className="w-full h-[300px]"
+              className=" h-[300px]"
               resizeMode="contain"
             />
             <View className="flex flex-row items-center justify-center w-full mt-10">
