@@ -358,6 +358,10 @@ import { stories } from '@/constants';
 
 
 const HomeScreen = () => {
+
+
+    const { width: screenWidth } = Dimensions.get('window');
+const [selectedStory, setSelectedStory] = useState(null);
   const [categories, setCategories] = useState([]);
   const [subCategories, setSubCategories] = useState([]);
   const [stores, setStores] = useState([]);
@@ -487,7 +491,8 @@ const HomeScreen = () => {
 
     </View>
     {/* Image Slider */}
-         {sliderImages.length > 0 && (
+         <View className='my-2'>
+          {sliderImages.length > 0 && (
           <FlatList
             ref={flatListRef}
             data={sliderImages}
@@ -498,12 +503,13 @@ const HomeScreen = () => {
             renderItem={({ item }) => (
               <Image
                 source={{ uri: `https://coffee.mahmoudalbatran.com/${item}` }}
-                style={{ width: screenWidth, height: 120 }}
-                resizeMode="contain"
+                style={{ width: screenWidth, height: 120, overflow: 'hidden' }}
+                resizeMode="cover"
               />
             )}
           />
         )}
+         </View>
       <Text style={styles.header}>التصنيفات</Text>
       {loading && <ActivityIndicator size="large" color="#000" />}
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.scrollRow}>

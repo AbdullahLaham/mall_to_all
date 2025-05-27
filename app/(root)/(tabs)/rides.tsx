@@ -1,0 +1,14 @@
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const rides = () => {
+  return (
+    <View>
+      <Text>rides</Text>
+    </View>
+  )
+}
+
+export default rides
+
+const styles = StyleSheet.create({})
