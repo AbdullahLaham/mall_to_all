@@ -222,6 +222,7 @@ const sendPushNotification = () => {
         <SafeAreaView style={styles.container}>
           <Stack>
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="newVendor" options={{ headerShown: false }} />
       {/* <Stack.Screen name="notification" options={{ headerShown: false }} /> */}
       {/* <Stack.Screen name="currentRide" options={{ headerShown: false }} /> */}
       {/* <Stack.Screen name="currentRide/[orderId]" options={{ headerShown: false }} /> */}

@@ -34,10 +34,10 @@ const Home = () => {
   // }, [])
 
 
-  return <Redirect href="/(auth)/welcome" />
+  // return <Redirect href="/(auth)/welcome" />
   // return <Text className='mt-10'>hello</Text>
   
-  // return <Redirect href="/(root)/(tabs)/home" />
+  return <Redirect href="/(root)/newVendor" />
 }
 
 export default Home

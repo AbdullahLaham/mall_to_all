@@ -145,6 +145,7 @@ import RidesScreen from './rides';
 import ChatScreen from './chat';
 import ProfileScreen from './profile';
 import { Ionicons } from '@expo/vector-icons';
+import newVendorScreen from '../newVendor';
 
 const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();
@@ -268,6 +269,7 @@ export default function Layout() {
       <Drawer.Screen name="Chat" component={ChatScreen} options={{ title: 'المحادثة' }} />
       <Drawer.Screen name="Prices" component={PricesScreen} options={{ title: 'التسعيرات' }} />
       <Drawer.Screen name="Profile" component={ProfileScreen} options={{ title: 'الملف الشخصي' }} />
+      <Drawer.Screen name="newVendor" component={newVendorScreen} options={{ title: ' انضم ك مزود' }} />
 
       {/* Optional: Add more direct Drawer Screens if needed */}
       {/* 
