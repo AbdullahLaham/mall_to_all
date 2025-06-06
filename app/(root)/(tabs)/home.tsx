@@ -354,6 +354,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import CustomButton from '@/components/CustomButton';
 const { width, height } = Dimensions.get('window');
 import { stories } from '@/constants';
+import { router } from 'expo-router';
 
 
 
@@ -539,12 +540,14 @@ const [selectedStory, setSelectedStory] = useState(null);
           <Text style={styles.header}>المتاجر</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.scrollRow}>
             {stores.map((item: any) => (
-              <View key={item.id} style={styles.storeItem}>
+              <TouchableOpacity key={item.id} onPress={() => router.push(`/(root)/currentStore/${item.id}`)}>
+                <View  style={styles.storeItem}>
                 <Image source={{ uri: `https://coffee.mahmoudalbatran.com/${item.profile_photo_path}` }} style={styles.storeImage} />
                 <Text style={styles.text}>{item.store_name}</Text>
                 {/* <Text style={styles.text}>{item.description}</Text> */}
                 <Text style={styles.text}>{item.phone_number}</Text>
               </View>
+              </TouchableOpacity>
             ))}
           </ScrollView>
         </>

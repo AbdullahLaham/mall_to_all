@@ -267,7 +267,7 @@ export default function Layout() {
       <Drawer.Screen name="Tabs" component={HomeScreen} options={{ title: 'الصفحة الرئيسيه' }} />
       <Drawer.Screen name="Rides" component={RidesScreen} options={{ title: 'الرحلات' }} />
       <Drawer.Screen name="Chat" component={ChatScreen} options={{ title: 'المحادثة' }} />
-      <Drawer.Screen name="Prices" component={PricesScreen} options={{ title: 'التسعيرات' }} />
+      <Drawer.Screen name="Prices" component={PricesScreen} options={{ title: '🛒 السلة' }} />
       <Drawer.Screen name="Profile" component={ProfileScreen} options={{ title: 'الملف الشخصي' }} />
       <Drawer.Screen name="newVendor" component={newVendorScreen} options={{ title: ' انضم ك مزود' }} />
 

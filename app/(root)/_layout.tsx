@@ -225,7 +225,7 @@ const sendPushNotification = () => {
       <Stack.Screen name="newVendor" options={{ headerShown: false }} />
       {/* <Stack.Screen name="notification" options={{ headerShown: false }} /> */}
       {/* <Stack.Screen name="currentRide" options={{ headerShown: false }} /> */}
-      {/* <Stack.Screen name="currentRide/[orderId]" options={{ headerShown: false }} /> */}
+      <Stack.Screen name="currentStore/[storeId]" options={{ headerShown: false }} />
       {/* <Stack.Screen name="currentConversation/[conversationId]" options={{ headerShown: false }} /> */}
 
     </Stack>

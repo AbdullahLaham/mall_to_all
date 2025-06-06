@@ -281,9 +281,9 @@ const ChatConversationsPage = () => {
   }
   return (
     <View style={styles.container}>
-      <Text className='flex items-center justify-center p-3 bg-[#2b2b2b] text-white text-center font-bold text-lg'>
+      {/*<Text className='flex items-center justify-center p-3 bg-[#2b2b2b] text-white text-center font-bold text-lg'>
         محادثاتك
-      </Text>
+      </Text>*/}
       <FlatList
         data={loading ? [...conversations, "loading"] : conversations} // Add "loading" as a placeholder
         refreshControl={

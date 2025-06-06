@@ -34,6 +34,8 @@ const Profile = () => {
   const [profileImage, setProfileImage] = useState(
     updatedUser?.profile_photo_url || user?.data?.client?.profile_photo_url || user?.data?.user?.profile_photo_url
   );
+
+  
   const [passwordModalVisible, setPasswordModalVisible] = useState(false);
   const [personalDataModalVisible, setPersonalDataModalVisible] = useState(false);
   const [imageModalVisible, setImageModalVisible] = useState(false);

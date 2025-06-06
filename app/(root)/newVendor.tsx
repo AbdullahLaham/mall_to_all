@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
 import React, { useState } from 'react';
-import { View, Text, TextInput, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { View, Text, TextInput, ScrollView, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { useSelector } from 'react-redux';
 
 export default function newVendorScreen () {
@@ -149,3 +149,29 @@ const [profileImage, setProfileImage] = useState(
   );
 }
 
+const styles = StyleSheet.create({
+ 
+  profileImage: {
+    width: 110,
+    height: 110,
+    borderRadius: 55,
+    borderWidth: 3,
+    borderColor: "#ccc",
+  },
+  initialImage: {
+    width: 110,
+    height: 110,
+    borderRadius: 55,
+    borderWidth: 3,
+    borderColor: "#ccc",
+    backgroundColor: "purple",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  initialText: {
+    color: "white",
+    fontSize: 48,
+    fontWeight: "bold",
+  },
+  
+});
